@@ -151,7 +151,7 @@ class QAgent:
         :param observation: numpy array of shape (width, height, 3) *defined in config file
         :return: int between 0 and max_action
         """
-        state, _ = self.get_state(obs)
+        state, _ = self.get_state(observation)
         for i in range(self.moves_per_epoch):
             actions = self.actions
             action = self.epsilon_greedy(self.Q, state, actions, self.epsilon)
