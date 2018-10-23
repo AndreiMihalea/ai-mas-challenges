@@ -152,6 +152,6 @@ class QAgent:
         :return: int between 0 and max_action
         """
         state, _ = self.get_state(observation)
-        for i in range(self.moves_per_epoch):
-            actions = self.actions
-            action = self.epsilon_greedy(self.Q, state, actions, self.epsilon)
+        actions = self.actions
+        action = self.epsilon_greedy(self.Q, state, actions, self.epsilon)
+        return action
