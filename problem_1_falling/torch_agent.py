@@ -174,5 +174,5 @@ class TorchAgent:
         state, _ = self.get_state(observation)
         actions = self.actions
         action = self.epsilon_greedy(state, actions, 0)
-        return action
+        return actions[action]
 
