@@ -176,5 +176,3 @@ class TorchAgent:
         action = self.epsilon_greedy(state, actions, 0)
         return action
 
-q = TorchAgent(4)
-q.qlearning()
