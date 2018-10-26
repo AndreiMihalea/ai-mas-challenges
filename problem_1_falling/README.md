@@ -33,3 +33,9 @@ Example:
 ```
 python test_agent.py -a demo_agent+DemoAgent
 ```
+
+## Solution
+Implemented three agents:
+ * A classic Q learning agent, where I represented a using the extremities of the objects
+ * A deep Q learning agent implemented in Keras, using a fully connected layer (there is a saved model in configs which is loaded)
+ * A deep Q learning agent implemented in PyTorch, using a convolutional neural network and a LSTM neural network (was too slow to train)
