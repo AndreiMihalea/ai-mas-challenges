@@ -9,7 +9,7 @@ from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNor
 from keras.optimizers import Adam
 from keras.layers.convolutional_recurrent import ConvLSTM2D
 
-class DemoAgent:
+class NNAgent:
     def __init__(self, max_action: int, learning_rate=0.1, discount=0.99, config_file='configs/default.yaml', frames=5,
         epsilon=0.9, epsilon_min=0.02, epochs = 30000, moves_per_epoch=1000, net_learning_rate=0.01, batch_size=16):
         self.max_action = max_action
