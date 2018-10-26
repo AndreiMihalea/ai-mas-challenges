@@ -25,3 +25,6 @@ Send us the SignalReceiver.py file with the main method rewritten to reduce the 
 
 All the tests contain 10k samples. There are 5 tests, each with a different noisy signal. 
 The reading of the data is done by the SignalReceiver class.
+
+## Solution
+Only added a simple method to detect and eliminate outliers based on the slope.
