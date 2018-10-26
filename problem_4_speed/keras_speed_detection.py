@@ -148,7 +148,7 @@ class Speed:
             np.random.shuffle(self.idx)
             self.idx = iter(self.idx)
             batcher = self.get_batch()
-            for i in range(1600):
+            for i in range(np.ceil(len(self.x_train) / self.batch_size):
                 if i % 100 == 0:
                     print(i)
                 x, y = next(batcher)
@@ -164,7 +164,7 @@ class Speed:
         self.test_idx = iter(self.test_idx)
         batcher = self.get_batch()
         predictions = []
-        for i in range(1600):
+        for i in range(np.ceil(len(list(self.test_idx)) / self.batch_size):
             if i % 100 == 0:
                 print(i)
             x, y = next(batcher)
